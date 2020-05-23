@@ -1,0 +1,348 @@
+body {
+    min-width : 630px;
+}
+.logo {
+  float: left;
+}
+.container {
+    padding-left : 200px;
+    padding-right : 190px;
+}
+.container .column {
+    position : relative;
+    float : left;
+}
+
+.center {
+    padding : 10px 20px;
+    width : 100%;
+}
+.left {
+    width : 180px;
+    padding : 0 10px;
+    right : 240px;
+    margin-left : -100%;
+}
+.right {
+    width : 130px;
+    padding : 0 10px;
+    margin-right : -100%;
+}
+.footer {
+    clear : both;
+}
+/* IE hack */
+* html .left {
+    left : 150px;
+}
+/* Make the columns the same height as each other */
+.container {
+    overflow : hidden;
+}
+.container .column {
+    padding-bottom : 1001em;
+    margin-bottom : -1000em;
+}
+/* Fix for the footer */
+* html body {
+    overflow : hidden;
+}
+* html .footer-wrapper {
+    float : left;
+    position : relative;
+    width : 100%;
+    padding-bottom : 10010px;
+    margin-bottom : -10000px;
+    background : #fff;
+}
+/* Aesthetics */
+body {
+    margin : 0;
+    padding : 0;
+    font-family : Sans-serif;
+    line-height : 1.5em;
+}
+p {
+    color : #555;
+}
+nav ul {
+    list-style-type : none;
+    margin : 0;
+    padding : 0;
+}
+nav ul a {
+    color : darkgreen;
+    text-decoration : none;
+}
+.header , .footer {
+    font-size : large;
+    padding : 0.3em;
+    background : #000;
+}
+.left {
+    background : #DAE9BC;
+}
+.right {
+    background : #F7FDEB;
+}
+.center {
+    background : #fff;
+}
+.container .column {
+    padding-top : 1em;
+}
+
+/* Fix for the footer */
+* html body {
+overflow: hidden;
+}
+* html .footer-wrapper {
+float: left;
+position: relative;
+width: 100%;
+padding-bottom: 10010px;
+margin-bottom: -10000px;
+background: #fff;
+}
+/* Aesthetics */
+body {
+margin: 0;
+padding: 0;
+font-family:Sans-serif;
+line-height: 1.5em;
+}
+p {
+color: #555;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+nav ul a {
+color: darkgreen;
+text-decoration: none;
+}
+.header, .footer {
+font-size: large;
+padding: 0.3em;
+background: #BCCE98;
+}
+.left {
+background: #DAE9BC;
+}
+.right {
+background: #F7FDEB;
+}
+.second {
+background: #000;
+}
+.center {
+
+background: #fff;
+}
+.container .column {
+padding-top: 1em;
+}
+
+
+
+//////////////
+
+
+
+.form-wrap {
+  width: 400px;
+  background: #ffd500;
+  border-radius: 20px;
+}
+.form-wrap *{transition: .1s linear}
+.profile {
+  width: 100px;
+  float: left;
+  text-align: center;
+  padding: 30px;
+}
+form {
+  background: white;
+  float: left;
+  width: calc(100% - 100px);
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+  color: #7b7b7b; 
+}
+.form-wrap:after, form div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 50px;
+}
+
+label, span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+input[type="text"], input[type="email"], input[type="birthday"], input[type="num"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="birthday"]:focus, input[type="num"]:focus {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+
+
+
+
+
+
+.radio label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  line-height: 30px;
+}
+.radio input {
+  position: absolute;  
+  opacity: 0;
+}
+.radio-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  text-align: center;
+}
+.male:before {
+  content: "\f111";
+  font-family: FontAwesome;
+  font-weight: bold;
+
+}
+.female:before {
+  content: "\f111";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+.yes:before{
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+
+.radio label:hover input ~ .radio-control,
+.radiol input:focus ~ .radio-control {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.radio input:checked ~ .radio-control {
+  color: black;
+}
+select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  -webkit-appearance: none; /*убираем галочку в webkit-браузерах*/
+  -moz-appearance: none; /*убираем галочку в Mozilla Firefox*/
+}
+select::-ms-expand {
+  display: none; /*убираем галочку в IE*/
+}
+.select-arrow {
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+button {
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 120px;
+  margin: 25px auto 0;
+  background: #60e6c5;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+/********************** добавляем форме адаптивность **********************/
+@media (max-width: 600px) {
+  .form-wrap {margin: 20px auto; max-width: 550px; width:100%;}
+  .profile, form {float: none; width: 100%;}
+  h1 {margin-top: auto; padding-bottom: 50px;}
+  form {border-radius: 0 0 20px 20px;}
+
+
+
+
+
+
+
+
+
+
+
+  .clear {clear: both;}
+label {float: left;}
+
+.labeltext {
+    display: inline-block;
+    float: left;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.custom-big-checkbox input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.custom-big-checkbox {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.custom-big-checkbox__checkbox {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border: 2px solid silver;
+  transition: border 0.3s ease;
+}
+
+.custom-big-checkbox input[type="checkbox"]:checked + .custom-big-checkbox__checkbox {
+  background: url(https://di-grand.com/blog/html/images/checked.svg) center center no-repeat;   border-color: black;
+}
+
+.custom-big-checkbox:hover .custom-big-checkbox__checkbox {
+  border-color: black;
+}
+}

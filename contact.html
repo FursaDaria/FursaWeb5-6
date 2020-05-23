@@ -1,0 +1,94 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fox club</title>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<header class="header"><a href="index.html" class="logo"><img src="assets/img/logo.png"></a>
+		<h3>FOXY CLUB</h3>
+
+	</header>
+<div class="container">
+<main class="center column">
+	<article>
+	 	<h1 align="center">Autorization</h1>
+
+  
+			  <form method="post" action="form.php">
+			    <div>
+			      <label for="name">Имя</label>
+			      <input type="text" name="name" required placeholder="Enter your name...">
+			    </div>
+			    <div>
+			    	<label for="birthday">День рождения</label>
+			    	<input type="birthday" name="birthday"required placeholder="Enter your birthday...">
+			    </div>
+			    <div class="radio">
+			      <span>Пол</span>
+			      <label>
+			        <input type="radio" name="sex" value="мужской">мужской
+			        <div class="radio-control male"></div>
+			      </label>
+			      <label> <input type="radio" name="sex" value="женский">женский <div class="radio-control female"></div> </label>
+			  </div>
+			    <div>
+			      <label for="email">E-mail</label>
+			      <input type="email" name="email" required placeholder="Enter you email ...">
+			    </div>
+			    <div>
+			    	<label for="num">Phone number (050xxxxxxx)</label>
+			    	<input type="num" name="num" pattern="[0-9]{10}" placeholder="Enter your number ...">
+			    </div>
+			         <div>
+			      <label for="country">Страна</label>
+			      <select name="country">
+			        <option>Выберите страну проживания</option>
+			        <option value="Россия">Россия</option> 
+			        <option value="Украина">Украина</option> 
+			        <option value="Беларусь">Беларусь</option> 
+			      </select> 
+			      <div class="select-arrow"></div> 
+			    </div> 
+			    <div class="radio">
+			      
+				      <label>
+				        <input type="radio" name="yes" value="yes">
+				        <div class="radio-control yes"></div>Я согласен с условиями работы
+				      </label>
+				      
+				</div>
+				    <button type="submit">Отправить</button> 
+	  </form> 
+
+	</article>
+</main>
+    <nav class= "left column" >
+        <h3> Left heading </h3>
+        <ul>
+
+            <li><a href= "about.html" > About </a></li>
+            <li><a href= "contact.html" > Contact </a></li>
+            <li><a href= "media.html" > Media </a></li>
+            <li><a href= "slider.html" > Slider </a></li>
+            <li><a href= "table.html" > Table </a></li>
+            <li><a href= "paint.html" > Paint </a></li>
+        </ul>
+
+    </nav>
+
+
+
+
+<div class="right column">
+<h3>Right heading</h3>
+<p></p>
+</div>
+</div>
+
+<div class="footer-wrapper">
+<footer class="footer"><p>Footer...</p></footer>
+</div>
+</body>
+</html>
